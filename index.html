@@ -8,16 +8,16 @@
     body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #333; }
     .hero {
       width: 100%;
-      height: auto;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .hero img {
       width: 100%;
       height: auto;
-      max-height: 600px;
-      object-fit: cover;
-      object-position: center;
       display: block;
+      max-width: 100%;
     }
     header { background-color: #0b1c39; color: white; padding: 2rem 1rem; text-align: center; }
     header h1 { margin: 0; font-size: 2rem; }
@@ -30,6 +30,10 @@
     input[type="submit"] { margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer; }
     footer { text-align: center; margin-top: 2rem; padding: 1rem; font-size: 0.85rem; color: #666; }
     @media (max-width: 480px) {
+      .hero img {
+        width: 100%;
+        height: auto;
+      }
       header h1 { font-size: 1.5rem; }
       .container { padding: 1rem; }
       h2 { font-size: 1.2rem; }
@@ -38,7 +42,7 @@
 </head>
 <body>
   <div class="hero">
-    <img src="bootcampai2025.jpg" alt="Banner Boot Camp AI 2025">
+    <img src="images/bootcampai2025.jpg" alt="Banner Boot Camp AI 2025">
   </div>
 
   <header>
@@ -74,30 +78,4 @@
       <input type="text" id="telefone" name="entry.hj99tb6" required>
 
       <label for="instituicao">Instituição ou órgão (ex: Prefeitura):</label>
-      <input type="text" id="instituicao" name="entry.hj99tb8">
-
-      <input type="submit" value="Inscrever-se gratuitamente">
-    </form>
-  </div>
-
-  <footer>
-    🔒 Seus dados estão protegidos. Página desenvolvida por ITSBI | Ciência de Dados, IA e Proteção de Dados
-  </footer>
-
-  <script>
-    const bootcampForm = document.getElementById('bootcampForm');
-    bootcampForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const bootcampData = new FormData(bootcampForm);
-
-      fetch("https://docs.google.com/forms/d/e/1FAIpQLSf1bDmNlanVGni4PuLl3c0Q9deKxJa6159Kra4EY9PaMEc/formResponse", {
-        method: "POST",
-        mode: "no-cors",
-        body: bootcampData
-      }).then(() => {
-        window.location.href = 'obrigado.html';
-      });
-    });
-  </script>
-</body>
-</html>
+      <input type="text" id="instituicao" name="entry.h
