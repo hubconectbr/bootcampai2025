@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inscrição Confirmada | BOOT CAMP AI 2025</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #333; }
+    header { background-color: #007bff; color: white; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 1.75rem; }
+    .container { max-width: 700px; margin: auto; padding: 1.5rem; background: white; box-shadow: 0 0 15px rgba(0,0,0,0.1); margin-top: 2rem; border-radius: 10px; }
+    p { font-size: 1rem; line-height: 1.6; }
+    a { color: #004085; font-weight: bold; text-decoration: none; }
+    footer { text-align: center; margin-top: 2rem; padding: 1rem; font-size: 0.85rem; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✅ Inscrição Confirmada</h1>
+    <p>Você está oficialmente inscrito no BOOT CAMP AI 2025</p>
+  </header>
+
+  <div class="container">
+    <p>Em breve, nossa equipe entrará em contato com mais detalhes sobre o evento e o link exclusivo de acesso à sala virtual.</p>
+    <p><strong>Datas confirmadas:</strong> 15 e 22 de maio de 2025 (duas manhãs de imersão ao vivo)</p>
+    <p>A formação abordará práticas baseadas na ISO/IEC 42001, ISO 23894 e EU AI Act, com exercícios práticos e discussão de casos reais.</p>
+  </div>
+
+  <footer>
+    🔗 Saiba mais sobre nossos cursos e consultorias em: <a href="https://www.consultoriso.com.br/" target="_blank">www.consultoriso.com.br</a><br/>
+    © 2025 ConsultorISO | Especialistas em Governança, Risco e Conformidade
+  </footer>
+</body>
+</html>
