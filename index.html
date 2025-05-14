@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOOT CAMP AI 2025 | Inscrição</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #333; }
+    header { background-color: #1f1f1f; color: white; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    .container { max-width: 700px; margin: auto; padding: 1.5rem; background: white; box-shadow: 0 0 15px rgba(0,0,0,0.1); margin-top: 2rem; border-radius: 10px; }
+    h2 { font-size: 1.5rem; margin-top: 1.5rem; }
+    ul, ol { padding-left: 1.2rem; }
+    form { margin-top: 1rem; }
+    label { display: block; margin-top: 1rem; font-weight: bold; }
+    input[type="text"], input[type="email"] { width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #ccc; border-radius: 5px; }
+    input[type="submit"] { margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    footer { text-align: center; margin-top: 2rem; padding: 1rem; font-size: 0.85rem; color: #666; }
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.5rem; }
+      .container { padding: 1rem; }
+      h2 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 BOOT CAMP AI 2025</h1>
+    <p>Formação em Governança e Gestão de Riscos em Inteligência Artificial</p>
+  </header>
+
+  <div class="container">
+    <h2>📘 Sobre o Evento</h2>
+    <p>O <strong>BOOT CAMP AI 2025</strong> é uma formação intensiva voltada para profissionais interessados em aprofundar seus conhecimentos em governança e gestão de riscos aplicados à Inteligência Artificial, com base nas normas ISO/IEC 42001, ISO 23894 e no EU AI Act.</p>
+    <ul>
+      <li><strong>Datas:</strong> 28 e 29 de maio de 2025</li>
+      <li><strong>Modalidade:</strong> Online, ao vivo</li>
+      <li><strong>Certificação:</strong> 12 horas com atividades práticas e desenvolvimento de um case</li>
+    </ul>
+
+    <h2>🎯 Público-Alvo</h2>
+    <ul>
+      <li>Profissionais do Direito e DPOs</li>
+      <li>Servidores públicos e técnicos de TI</li>
+      <li>Estudantes e pesquisadores em IA, Direito e Governança</li>
+    </ul>
+
+    <h2>📥 Inscreva-se</h2>
+    <form id="bootcampForm">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="entry.hj99tb2" required>
+
+      <label for="email">E-mail institucional:</label>
+      <input type="email" id="email" name="entry.hj99tb4" required>
+
+      <label for="telefone">Telefone de contato:</label>
+      <input type="text" id="telefone" name="entry.hj99tb6" required>
+
+      <label for="instituicao">Instituição ou órgão (ex: Prefeitura):</label>
+      <input type="text" id="instituicao" name="entry.hj99tb8">
+
+      <input type="submit" value="Inscrever-se gratuitamente">
+    </form>
+  </div>
+
+  <footer>
+    🔒 Seus dados estão protegidos. Página desenvolvida por ITSBI | Ciência de Dados, IA e Proteção de Dados
+  </footer>
+
+  <script>
+    const bootcampForm = document.getElementById('bootcampForm');
+    bootcampForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const bootcampData = new FormData(bootcampForm);
+
+      fetch("https://docs.google.com/forms/d/e/1FAIpQLSf1bDmNlanVGni4PuLl3c0Q9deKxJa6159Kra4EY9PaMEc/formResponse", {
+        method: "POST",
+        mode: "no-cors",
+        body: bootcampData
+      }).then(() => {
+        window.location.href = 'obrigado.html';
+      });
+    });
+  </script>
+</body>
+</html>
